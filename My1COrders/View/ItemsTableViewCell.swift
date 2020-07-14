@@ -23,7 +23,7 @@ class ItemsTableViewCell: UITableViewCell {
     @IBOutlet weak var quantityTextField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization code test
         //statusView.layer.cornerRadius = 5
     }
 
