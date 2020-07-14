@@ -1,0 +1,25 @@
+//
+//  ManagerUnit.swift
+//  My1COrders
+//
+//  Created by Владимир on 02.07.2020.
+//  Copyright © 2020 VladCorp. All rights reserved.
+//
+
+struct ManagerUnit: Codable{
+    
+    let name: String
+    
+    init?(name: String?){
+        guard
+            let name = name else {return nil}
+        self.name = name
+
+    }
+}
+
+struct ManagerUnitResponse: Decodable{
+    
+    let managerUnits:[ManagerUnit]
+   
+}
